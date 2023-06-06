@@ -14,6 +14,7 @@
 </head>
 <body>
     <!-- Vue 3 -->
+    
     <script src="https://unpkg.com/vue@3"></script>
     <main>
         <div class="main-container">
@@ -28,9 +29,13 @@
                     Add
                 </button>
 
-                <ul>
-                    <li v-for= "(listItem, index) in todoList" @click="v-model: itemCheck">
-                        {{todoList[index].text}}
+                <ul> 
+                    <li v-for= "(listItem, index) in todoList" > <!-- @click="itemCheck()" -->
+                        <p>{{todoList[index].text}}</p>
+                        <span @click="removeItem (itemIndex)">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                        
                     </li>
                 </ul>
             </div>

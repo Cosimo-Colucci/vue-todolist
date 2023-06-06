@@ -39,6 +39,12 @@ div.app-container ul{
     padding: 2rem;
 }
 div.app-container ul li{
-    margin-bottom: .5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
     font-size: 1.5rem;
+}
+
+li p.done{
+    text-decoration-line: line-through;
 }

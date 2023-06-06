@@ -26,10 +26,13 @@ createApp({
     },
      methods: { 
 
-        itemCheck (){
-            if (this.todoList.done === true){
-                this.todoList.text = this.todoList.done.UpperCase
-            }
+        removeItem (itemIndex){
+            this.todoList.splice(itemIndex, 1);
         }
+        // itemCheck (){
+        // if(this.todoList.done === true){
+        //     this.todoList.text.
+        // }
+        // }
      }
 }).mount("#app")
