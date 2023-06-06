@@ -12,7 +12,7 @@ createApp({
                     done: "false"
                 }, {
                     text: "Pagare la bolletta della luce",
-                    done: "false"
+                    done: "true"
                 }, {
                     text: "Ricondarsi della torta per Giuseppe",
                     done: "false"
@@ -25,6 +25,11 @@ createApp({
         }  
     },
      methods: { 
-         
+
+        itemCheck (){
+            if (this.todoList.done === true){
+                this.todoList.text = this.todoList.done.UpperCase
+            }
+        }
      }
 }).mount("#app")

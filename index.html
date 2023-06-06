@@ -29,7 +29,7 @@
                 </button>
 
                 <ul>
-                    <li v-for= "(listItem, index) in todoList">
+                    <li v-for= "(listItem, index) in todoList" @click="v-model: itemCheck">
                         {{todoList[index].text}}
                     </li>
                 </ul>
