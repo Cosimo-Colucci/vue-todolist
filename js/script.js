@@ -21,10 +21,15 @@ createApp({
                     done: "false"
                 }
             ],
-
+            item: "",
         }  
     },
      methods: { 
+
+        addItem (todoItem){
+            this.todoList.push(todoItem);
+            this.item = ""
+        },
 
         removeItem (itemIndex){
             this.todoList.splice(itemIndex, 1);
