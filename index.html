@@ -22,16 +22,16 @@
                     The most beautiful To-Do List
                 </h1>
             </div>
-            <div class="app-container">
+            <div id="app" class="app-container">
                 <input type="text">
                 <button>
                     Add
                 </button>
 
                 <ul>
-                    <li>ciaop</li>
-                    <li>giuseppe</li>
-                    <li>vanessa</li>
+                    <li v-for= "(listItem, index) in todoList">
+                        {{todoList[index].text}}
+                    </li>
                 </ul>
             </div>
         </div>
