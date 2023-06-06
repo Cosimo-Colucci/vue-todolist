@@ -7,4 +7,38 @@ main{
     background-color: #f5f5f5;
     width: 100vw;
     height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.main-container{
+    background-color: white;
+    border-radius: .5rem;
+    width: 500px;
+    margin: 0 auto; 
+}
+div.main-container div.title{
+    margin: 1rem;
+}
+div.app-container input{
+    width: 70%;
+    height: 2rem;
+}
+div.app-container button{
+    background-color: #070781;
+    color: white;
+    width: 20%;
+    height: 2rem;
+    border: 2px solid #070781;
+    border-radius: 2px;
+}
+div.app-container ul{
+    list-style: none;
+    text-align: left;
+    padding: 2rem;
+}
+div.app-container ul li{
+    margin-bottom: .5rem;
+    font-size: 1.5rem;
 }
